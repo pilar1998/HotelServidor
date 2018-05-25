@@ -14,12 +14,21 @@ public class reserva {
     private String diaSalida;
     private int idCliente;
     private int idReserva;
-
-    public reserva(String diaEntrada, String diaSalida, int idCliente,int idReserva) {
+    private String estado_reserva;
+    public reserva(String diaEntrada, String diaSalida, int idCliente,int idReserva,String estado_reserva) {
         this.diaEntrada = diaEntrada;
         this.diaSalida = diaSalida;
         this.idCliente = idCliente;
         this.idReserva = idReserva;
+        this.estado_reserva = estado_reserva;
+    }
+
+    public String getEstado_reserva() {
+        return estado_reserva;
+    }
+
+    public void setEstado_reserva(String estado_reserva) {
+        this.estado_reserva = estado_reserva;
     }
 
     public void setIdReserva(int idReserva) {
